@@ -11,9 +11,3 @@
     transform: translateY(-5px) rotateZ(45deg);
   }
 }
-
-.anim-list {
-  @media (max-width: 768px) {
-    clip-path: circle(1000px at 90% 20%);
-  }
-}

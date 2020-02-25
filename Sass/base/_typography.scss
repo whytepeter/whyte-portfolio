@@ -1,0 +1,23 @@
+@import "../abstract/variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+a {
+  &:any-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: $link-color;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+  }
+}

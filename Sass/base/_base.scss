@@ -1,0 +1,29 @@
+@import "../abstract/variables";
+
+//Reset styles
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+// Base Style
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 62.5%;
+  background-color: $background-color;
+  color: #333;
+}
+
+.container {
+  display: block;
+  max-width: 1148px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: $background-color;
+
+  @media (max-width: 768px) {
+  }
+}

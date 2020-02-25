@@ -1,0 +1,15 @@
+@import "../abstract/variables";
+
+// The nav links hover styles
+.btn-nav {
+  &:hover {
+    border: 1px solid;
+    border-image-source: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      $link-hover-color
+    );
+    border-image-slice: 1;
+    color: $link-hover-color;
+  }
+}

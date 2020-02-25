@@ -1,0 +1,19 @@
+@import "../abstract/variables";
+//Hamburger Animation styles Onclick anim is added to the Hamburger
+.anim-hamburger:hover > .line {
+  &:nth-child(1) {
+    transform: translateY(5px) rotateZ(-45deg);
+  }
+  &:nth-child(2) {
+    display: none;
+  }
+  &:nth-child(3) {
+    transform: translateY(-5px) rotateZ(45deg);
+  }
+}
+
+.anim-list {
+  @media (max-width: 768px) {
+    clip-path: circle(1000px at 90% 20%);
+  }
+}

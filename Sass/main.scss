@@ -47,9 +47,7 @@ header {
 
     @media (max-width: 768px) {
       display: block;
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
+      z-index: 20;
     }
   }
 
@@ -65,7 +63,7 @@ header {
     //border: 1px solid $link-color; //for debugging
 
     @media (max-width: 768px) {
-      justify-content: flex-start;
+      justify-content: space-between;
     }
     &--logo {
       width: 15rem;

@@ -120,9 +120,7 @@ header .hamburger--wrapper .line:nth-child(2) {
 @media (max-width: 768px) {
   header .hamburger--wrapper {
     display: block;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    z-index: 20;
   }
 }
 
@@ -143,9 +141,9 @@ header .nav {
 
 @media (max-width: 768px) {
   header .nav {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

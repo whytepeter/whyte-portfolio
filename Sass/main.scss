@@ -93,13 +93,13 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-
+        padding-bottom: 1rem;
         width: 100%;
         height: 100vh;
         font-size: 1.5rem;
 
         flex-direction: column;
-        transition: all 1s ease-out;
+        transition: all 0.5s ease-out;
 
         background-color: $background-fade2-color;
         clip-path: circle(100px at 90% -30%);

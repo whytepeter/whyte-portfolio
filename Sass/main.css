@@ -118,6 +118,12 @@ body {
   padding: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+
 .hamburger--wrapper {
   display: none;
   -webkit-box-orient: vertical;

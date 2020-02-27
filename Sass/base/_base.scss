@@ -11,9 +11,16 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
-  background-color: $background-color;
+  background: linear-gradient(
+      to right,
+      ($background-fade-color),
+      ($background-fade-color)
+    ),
+    url(../images/background.jpg) center no-repeat;
+  background-size: cover;
+
   color: #333;
 }
 
@@ -22,7 +29,6 @@ body {
   max-width: 1148px;
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: $background-color;
 
   @media (max-width: 768px) {
   }

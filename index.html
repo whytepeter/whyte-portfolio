@@ -3,40 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0e2c38c33e.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
       rel="stylesheet"
     />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="stylesheet" href="./Sass/main.css" />
-    <title>Responsive Design</title>
+    <link
+      rel="icon"
+      href="./images/favicon.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <title>WhyteWeb</title>
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav class="nav">
-          <div class="nav--logo-wrapper">
+      <nav class="nav">
+        <a class="nav--logo-wrapper" href="./index.html"
+          ><img
+            src="./images/logo-text.png"
+            alt="whyte web logo"
+            class="nav--logo"
+        /></a>
+
+        <ul class="nav--list ">
+          <li><a href="#" class="nav--links">Home</a></li>
+          <li><a href="#" class="nav--links">About</a></li>
+          <li><a href="#" class="nav--links">Portfolio</a></li>
+          <li><a href="#" class="nav--links">Contact</a></li>
+        </ul>
+        <div class="hamburger--wrapper">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="header--home header--description description">
+          <p class="description--greeting animated forward fadeInLeft delay-1s">
+            Hello I'm
+          </p>
+          <h1 class="description--name animated forward fadeInLeft ">
+            Whyte Peter
+          </h1>
+          <p class="description--tag animated forward fadeInLeft delay-2s">
+            I Create.Design.Build <span class="website">Website</span>
+          </p>
+          <a class="btn btn--contact animated forward fadeInUp delay-3s">
+            <i class="fas fa-arrow-circle-right"></i>
+            Get in touch
+          </a>
+        </div>
+        <div class="header--home header--image">
+          <img
+            src="images/whyte-new.png"
+            alt="Whyte Peter Photo"
+            class="whyte-image"
+          />
+        </div>
+        <div class="header--home header--social-links">
+          <a
+            href="https://web.facebook.com/whytecode1/"
+            target="_blank"
+            class="facebook"
+            >Facebook</a
+          >
+          <a
+            href="https://twitter.com/whytecode"
+            target="_blank"
+            class="twitter"
+            >Twitter</a
+          >
+          <a
+            href="https://www.instagram.com/dewhytepeter/"
+            target="_blank"
+            class="instagram"
+            >Instagram</a
+          >
+        </div>
+        <div class="header--home header--portfolio portfolio">
+          <div class="portfolio--image">
             <img
-              src="./images/logo-text.png"
-              alt="whyte web logo"
-              class="nav--logo"
+              src="./images/Portfolio/Event Ball-logo.jpg"
+              alt="B-event projects"
             />
           </div>
-          <ul class="nav--list ">
-            <li><a href="#" class="nav--links btn-nav">Home</a></li>
-            <li><a href="#" class="nav--links btn-nav">About</a></li>
-            <li><a href="#" class="nav--links btn-nav">Projects</a></li>
-            <li><a href="#" class="nav--links btn-nav">Contact</a></li>
-          </ul>
-          <div class="hamburger--wrapper">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+          <div class="portfolio--visit">
+            <p>View My Projects</p>
+            <a href="#" class="btn btn--portfolio"
+              >See More
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
-        </nav>
+        </div>
       </header>
     </div>
   </body>

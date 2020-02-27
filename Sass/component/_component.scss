@@ -1,17 +1,50 @@
 @import "../abstract/variables";
 
-// The nav links hover styles
-.btn-nav {
-  &:hover {
-    border: 1px solid;
-    border-image-source: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      $link-hover-color
-    );
-    border-image-slice: 1;
-    color: $link-hover-color;
+.btn {
+  display: inline-block;
+  width: 150px;
+  padding: 0.7rem 1rem;
+  border: none;
+  background-color: $link-color;
+  color: $white-color;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
 
-    outline: none;
+  &--contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    transform: translateY(-30px);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+
+    &:active {
+      background-color: $text-color;
+    }
+    &:hover > i {
+      margin-left: -10px;
+    }
+
+    i {
+      color: $link-hover-color;
+      font-size: 1.1rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &--portfolio {
+    background-color: $link-hover-color;
+    color: $link-color;
+    margin-bottom: 1rem;
+    &:hover > i {
+      transition: all 0.3s ease-in-out;
+      margin-left: 10px;
+    }
   }
 }

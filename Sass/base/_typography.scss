@@ -11,13 +11,16 @@ h6 {
 }
 
 a {
-  &:any-link {
+  &:link,
+  :active,
+  :visited {
     display: inline-block;
     text-decoration: none;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     color: $link-color;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
   }
+
   &:hover {
   }
 }

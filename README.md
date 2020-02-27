@@ -1,2 +1,3 @@
 # whyte-portfolio
-This is my portfolio website
+
+This is Whyte Peter Official Portfolio site

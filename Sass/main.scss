@@ -48,6 +48,7 @@
   border-radius: 50px;
   box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.123);
   transition: all 0.3s ease-in-out;
+
   cursor: pointer;
   z-index: 17;
   outline: none;
@@ -57,7 +58,9 @@
   right: 10px;
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &:hover {
@@ -67,6 +70,12 @@
   a {
     padding: 0;
     outline: none;
+    color: $link-color;
+    font-size: 2rem;
+
+    &:hover {
+      color: $link-hover-color;
+    }
     img {
       width: 100%;
       border-radius: 50px;

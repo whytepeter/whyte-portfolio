@@ -179,7 +179,15 @@ body {
 
 @media (max-width: 768px) {
   .about--head {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -191,6 +199,12 @@ body {
 .about--head a {
   padding: 0;
   outline: none;
+  color: #141414;
+  font-size: 2rem;
+}
+
+.about--head a:hover {
+  color: #fda21a;
 }
 
 .about--head a img {

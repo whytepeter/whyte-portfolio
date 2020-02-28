@@ -618,7 +618,6 @@ body {
 @media (max-width: 560px) {
   .section-about .about--whyte {
     height: 450px;
-    margin-top: 2rem;
   }
 }
 

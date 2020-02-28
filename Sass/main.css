@@ -858,6 +858,7 @@ body {
             justify-content: center;
     width: 100%;
     height: 100%;
+    border-radius: 0;
   }
   .section-about .about--footer .powered--logo {
     margin: 0 0.5rem;

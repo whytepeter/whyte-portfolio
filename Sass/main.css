@@ -692,6 +692,11 @@ body {
 @media (max-width: 768px) {
   .section-about .about--skills {
     text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-about .about--skills {
     margin-bottom: 5rem;
     margin-top: -5rem;
   }

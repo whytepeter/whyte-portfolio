@@ -430,6 +430,10 @@ body {
   cursor: pointer;
 }
 
+.header--description .description--tag .website .txt {
+  border-right: 0.15rem solid #666666;
+}
+
 @media (max-width: 900px) {
   .header--description .description--tag {
     font-size: 1.3rem;

@@ -236,6 +236,11 @@
         & .website {
           color: $link-hover-color;
           cursor: pointer;
+
+          //Typing Cursor
+          .txt {
+            border-right: 0.15rem solid $text-2-color;
+          }
         }
 
         @media (max-width: 900px) {

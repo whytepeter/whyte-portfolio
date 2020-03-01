@@ -78,6 +78,7 @@
     }
     img {
       width: 100%;
+      margin-top: 7px;
       border-radius: 50px;
     }
   }
@@ -592,6 +593,143 @@
         &--logo {
           width: 30px;
         }
+      }
+    }
+  }
+}
+
+.section-contact {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  color: $text-color;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 450px);
+  grid-template-rows: 400px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 450px;
+    grid-template-rows: repeat(2, 400px);
+    margin: 0 1rem;
+  }
+  @media (max-width: 568px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 350px);
+  }
+  .contact-box {
+    width: 100%;
+    height: 100%;
+
+    //border: 1px solid #444;
+  }
+
+  &--whyteweb {
+    width: 100%;
+    background-color: $contact-white;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    @media (max-width: 768px) {
+      grid-row: 2/2;
+    }
+
+    img {
+      width: 15rem;
+    }
+
+    .contact-links {
+      .phone-add,
+      .mail-add {
+        display: flex;
+        margin-bottom: 1rem;
+
+        p {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .contact-social-links {
+      a {
+        padding: 0.5rem 1rem;
+        background-color: $link-color;
+        color: $white-color;
+
+        border-radius: 3px;
+
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  &--form {
+    padding: 3rem;
+    background-color: $contact-orange;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+    form {
+      width: 100%;
+      justify-content: flex-end;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .input-wrapper {
+        width: 100%;
+        position: relative;
+      }
+      .form-inputs {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $dark-color;
+        margin: 1rem 0 1rem 0;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        padding: 0.5rem 1rem;
+
+        color: $text-color;
+
+        &:focus {
+          background-color: rgba(68, 68, 68, 0.062);
+        }
+      }
+      input {
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      label {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: $text-2-color;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .label-email-anim,
+      .label-message-anim {
+        top: 0;
+      }
+
+      textarea {
+        width: 100%;
+        font-size: 1.3rem;
       }
     }
   }

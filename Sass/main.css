@@ -32,7 +32,7 @@
 }
 
 .btn--contact:active {
-  background-color: #282828;
+  background-color: #1f1f1f;
 }
 
 .btn--contact:hover > i {
@@ -56,6 +56,25 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-left: 10px;
+}
+
+.btn--submit {
+  text-align: center;
+  border-radius: 3px;
+}
+
+.btn--submit i {
+  margin: 0 10px 0 -10px;
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.btn--submit:hover {
+  color: #fda21a;
+}
+
+.btn--submit:active i {
+  margin-left: -15px;
 }
 
 .anim-hamburger > .line:nth-child(1) {
@@ -209,6 +228,7 @@ body {
 
 .about--head a img {
   width: 100%;
+  margin-top: 7px;
   border-radius: 50px;
 }
 
@@ -885,5 +905,176 @@ body {
 
 .section-about .about--footer .powered--logo {
   width: 30px;
+}
+
+.section-contact {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  color: #282828;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (450px)[2];
+      grid-template-columns: repeat(2, 450px);
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+}
+
+@media (max-width: 768px) {
+  .section-contact {
+    -ms-grid-columns: 450px;
+        grid-template-columns: 450px;
+    -ms-grid-rows: (400px)[2];
+        grid-template-rows: repeat(2, 400px);
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .section-contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (350px)[2];
+        grid-template-rows: repeat(2, 350px);
+  }
+}
+
+.section-contact .contact-box {
+  width: 100%;
+  height: 100%;
+}
+
+.section-contact--whyteweb {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.568);
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .section-contact--whyteweb {
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+}
+
+.section-contact--whyteweb img {
+  width: 15rem;
+}
+
+.section-contact--whyteweb .contact-links .phone-add,
+.section-contact--whyteweb .contact-links .mail-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.section-contact--whyteweb .contact-links .phone-add p,
+.section-contact--whyteweb .contact-links .mail-add p {
+  margin-left: 1rem;
+}
+
+.section-contact--whyteweb .contact-social-links a {
+  padding: 0.5rem 1rem;
+  background-color: #141414;
+  color: #f0f0f0;
+  border-radius: 3px;
+}
+
+.section-contact--whyteweb .contact-social-links a:hover {
+  color: #fda21a;
+}
+
+.section-contact--form {
+  padding: 3rem;
+  background-color: rgba(253, 162, 26, 0.568);
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+}
+
+.section-contact--form h1 {
+  font-size: 1.7rem;
+}
+
+.section-contact--form form {
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section-contact--form form .input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.section-contact--form form .form-inputs {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #141414;
+  margin: 1rem 0 1rem 0;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+  color: #282828;
+}
+
+.section-contact--form form .form-inputs:focus {
+  background-color: rgba(68, 68, 68, 0.062);
+}
+
+.section-contact--form form input {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.section-contact--form form label {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: #666666;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-contact--form form .label-email-anim,
+.section-contact--form form .label-message-anim {
+  top: 0;
+}
+
+.section-contact--form form textarea {
+  width: 100%;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

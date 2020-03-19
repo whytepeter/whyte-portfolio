@@ -23,9 +23,11 @@ formInput.forEach(input => {
     if (e.target.id == "email") {
       labelEmail.classList.add("label-email-anim");
       labelEmail.style.color = "rgb(40, 40, 40)";
+      labelEmail.style.fontSize = "13px";
     } else {
       labelMessage.classList.add("label-message-anim");
       labelMessage.style.color = "rgb(40, 40, 40)";
+      labelMessage.style.fontSize = "13px";
     }
   });
 
@@ -33,9 +35,11 @@ formInput.forEach(input => {
     if (e.target.id == "email" && e.target.value === "") {
       labelEmail.classList.remove("label-email-anim");
       labelEmail.style.color = "#666666";
+      labelEmail.style.fontSize = "1rem";
     } else if (e.target.id == "message" && e.target.value === "") {
       labelMessage.classList.remove("label-message-anim");
       labelMessage.style.color = "#666666";
+      labelMessage.style.fontSize = "1rem";
     }
   });
 });
